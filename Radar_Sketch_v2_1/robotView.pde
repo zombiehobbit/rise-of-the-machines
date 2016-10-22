@@ -66,6 +66,18 @@ public class RobotView implements Imap
      
   }
   
+  // getX and getY are stubbed for now 
+  
+  public int getX()
+  {
+    return -1;  
+  }
+  
+  public int getY()
+  {
+    return -1; 
+  }
+  
   public String getJson()
   {
     return null; 

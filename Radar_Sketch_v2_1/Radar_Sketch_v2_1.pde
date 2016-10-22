@@ -23,6 +23,7 @@ float Grid = 2;  // This can just be a literal, see line ~65
 // these are for maxium number of x and y points for the grid
 int gridXMax=1000;
 int gridYMax=1000;
+TestMap a;
 
 Radar_screen display;
 
@@ -34,7 +35,8 @@ void setup()
   background(50,50,50);
   
   display=new Radar_screen(350); 
-  
+  a=new TestMap();
+  display.setMap(a);
 }
 
 void draw()
@@ -45,6 +47,7 @@ void draw()
   // demo for restricted Drawing 
   float min=0.78540;
   float max=-0.78540;
+  display.updateMapDisplay();
   display.reDraw(min,max,true);
   
   //// line(x1, y1, x2, y2)

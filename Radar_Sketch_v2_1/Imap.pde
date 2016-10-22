@@ -15,6 +15,8 @@ public interface Imap
    void addPos(int x,int y); // add a new position
    void addPos(PVector d);
    void clearPos(PVector d);
+   int getX();
+   int getY();
    boolean [][] getMatrix(); // return a 2d array of boolean values;
    boolean isOccupied(int x,int y); // returns true if there is an object 
    void transformBydisplacement(PVector d); // transforms the value of the map by the componets of vector d 

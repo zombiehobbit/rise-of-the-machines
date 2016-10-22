@@ -139,7 +139,25 @@ public class Radar_screen
   // set the current map 
   public void setMap(Imap current_map)
   {
-     
+     local_map=current_map;
+  }
+ 
+  // draws the current Imap onto the radar display 
+  public void updateMapDisplay()
+  {
+    boolean[][] currentMatrix=local_map.getMatrix();
+    
+    for(int x=0;x<local_map.getX();x++)
+    {
+      for(int y=0;y<local_map.getY();y++)
+      {
+        if(currentMatrix[x][y])
+        {
+          rect((x+10),(y+10),10,10);
+        }
+      }
+    }
+    
   }
  
   // update to a new map
