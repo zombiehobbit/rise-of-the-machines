@@ -40,7 +40,12 @@ void setup()
 void draw()
 {
  
-  display.reDraw();
+  //display.reDrawHalfCircle();
+  
+  // demo for restricted Drawing 
+  float min=0.78540;
+  float max=-0.78540;
+  display.reDraw(min,max,true);
   
   //// line(x1, y1, x2, y2)
     
